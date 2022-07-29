@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Phonebook</title>
+</head>
+<body>
+	<h2>Commands:</h2>
+	<form method="GET" action="http://localhost:8080">
+		<h3>Add Contact:</h3>
+		<input type="hidden" name="add" size="20">
+		Name:<input type="text" name="name" size="20"><br>
+		Number: <input type="text" name="num" size="20">
+	<br><input type="submit" value="Do it">
+	</form>
+	<br>
+	<form method="POST" enctype="multipart/form-data" action="http://localhost:8080">
+		<h3>Print list:</h3>
+		<input type="hidden" name="print" size="20">
+		<input type="submit" value="Do it">
+	</form>
+	<br>
+	<form method="GET" action="http://localhost:8080">
+		<h3>Remove Contact:</h3>
+		<input type="text" name="delete" size="20">
+		<br><input type="submit" value="Do it">
+	</form>
+	<br>
+	<form method="GET" action="http://localhost:8080">
+		<h3>Search Number:</h3>
+		<input type="text" name="searchNum" size="20">
+		<br><input type="submit" value="Do it">
+	</form>
+	<br>
+	<form method="GET" action="http://localhost:8080">
+		<h3>Search Name:</h3>
+		<input type="text" name="searchName" size="20">
+		<br><input type="submit" value="Do it">
+	</form>
+</body>
+</html>
